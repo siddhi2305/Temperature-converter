@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css">
+    <!--font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Oswald:wght@200;300;400;500;600;700&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <!--for icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+
+<body>
+    <section class="temp-form">
+        <div class="container">
+            <h2 class="title">Temperature Converter</h2><br>
+            <div class="option-field">
+                <div>
+                    <select name="temperature" id="temp-type" class="select-box">
+
+                        <option value="" selected>Select temperature type</option>
+                        <option value="celsius" id="celsius">Celsius</option>
+                        <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin" id="kelvin">Kelvin</option>
+                    </select><br>
+                </div>
+                <div>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="input-field">
+                <input type="number" class="effect" id="degree" placeholder="Enter temperature">
+                <span class="focus-border"></span><br>
+            </div>
+
+            <div class="option-field">
+                <div>
+                    <select name="temperature" id="result-type" class="select-box">
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                        <option value="" selected>Select result type</option>
+                        <option value="celsius" id="celsius">Celsius</option>
+                        <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin" id="kelvin">Kelvin</option>
+                    </select><br>
+                </div>
+                <div>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="button-field">
+                <button class="button" id="convert">Convert</button>
+            </div>
+            <div class="result-field" id="result">1</div>
+        </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
